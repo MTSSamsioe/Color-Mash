@@ -29,7 +29,8 @@ function start() {
       clock = 20;
       // Changes time to game over
       document.getElementById('timeLeft').innerHTML='Game over';
-      
+      // push score to high score array
+      highScore()
       // show answer buttons
       document.getElementById("yes").style.visibility = "hidden";
       document.getElementById("no").style.visibility = "hidden";
@@ -86,3 +87,37 @@ function checkCorrectAnswerIfYes() {
     }
   
   }
+
+  // function that checks answer if "no" button is pressed
+  function checkCorrectAnswerIfNo() {
+  
+    // Top word and color of bottom word
+    let topWordOnScreen = document.getElementById("topWord").innerText;
+    let bottomColorOnScreen = document.getElementById("bottomWord").style.color;
+    // Change Captial letters to lower case so they can compare to colors
+    let toLowerCaseWords = topWordOnScreen.toLowerCase() ;
+    // If statement that compares that the to word and the color of the bottom word match
+   
+    
+    
+    let score = parseInt(document.getElementById("score").innerText);
+    if (toLowerCaseWords !== bottomColorOnScreen) {
+      
+      document.getElementById("score").innerText = ++score ;
+    } else {
+      
+      document.getElementById("score").innerText = --score ;
+    }
+  
+  }
+
+  // Function that saves higest score to an array
+  let highScoreArray = [0];
+  function highScore() {
+    // adds endscore to high score array
+     let finalScore = parseInt(document.getElementById("score").textContent);
+      highScoreArray.push(finalScore)
+      highScoreArray.sort()
+      highScoreArray.reverse()
+      document.getElementById("highScore").innerHTML = highScoreArray[0]
+    }
