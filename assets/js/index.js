@@ -29,7 +29,6 @@ function start() {
       // Changes time to game over
       document.getElementById('timeLeft').innerHTML='Game over';
       
-    
       // show answer buttons
       document.getElementById("yes").style.visibility = "hidden";
       document.getElementById("no").style.visibility = "hidden";
@@ -41,3 +40,11 @@ function start() {
     }
   }, 1000);
 }
+
+// function to generate random numbers
+function randomNumber() {
+    let randomNumber = Math.floor(Math.random() * 4);
+    return randomNumber
+  }
+
+  
