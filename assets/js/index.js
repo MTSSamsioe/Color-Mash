@@ -14,7 +14,8 @@ function start() {
     // show answer buttons
     document.getElementById("yes").style.visibility = "visible";
     document.getElementById("no").style.visibility = "visible";
-   
+    // Change words and colors of the games inital questions
+    wordAndColChange()
   
   // code from line 17 to 26 and line 35 to 38  is heavily influenced from https://www.codegrepper.com/code-examples/javascript/add+countdown+time+to+game+javascript
   
@@ -47,4 +48,20 @@ function randomNumber() {
     return randomNumber
   }
 
+  // functio to change colors and words
+  function wordAndColChange() {
+    // Array for wrods and colors
+    colorsArray = ["RED", "GREEN", "BLUE", "ORANGE" ]
+    wordsArray = ["RED", "GREEN", "BLUE", "ORANGE" ]
+   // Random top and bottom words
+  let randomTopWord = wordsArray[randomNumber()];
+   document.getElementById("topWord").innerHTML = randomTopWord
+  let randomBottomWord = wordsArray[randomNumber()];
+   document.getElementById("bottomWord").innerHTML = randomBottomWord
+  // Random colors
+  let randomTopColor = colorsArray[randomNumber()]
+  document.getElementById("topWord").style.color = randomTopColor ;
+  let randomBottomColor = colorsArray[randomNumber()]
+  document.getElementById("bottomWord").style.color = randomBottomColor ;
   
+}
