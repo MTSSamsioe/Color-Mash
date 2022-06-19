@@ -82,11 +82,13 @@ body {
 
 .gameSection {
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: RGB(152, 180, 212);
     width: 80%;
+    border-radius: 50%;
 }
 
 #meaning, #wordColor {
+    
     margin: 2% auto;
     text-align: center;
     background-color: rgb(120, 120, 120, 0.5);
@@ -95,8 +97,15 @@ body {
     font-size: 1.5rem;
 }
 
+#meaning {
+    border-radius: 50% 50% 10% 10%;
+}
+#wordColor{
+    border-radius: 10% 10% 50% 50%;
+}
+
 #topWord, #bottomWord {
-    margin: 2% auto;
+    margin: 1% auto;
     text-align: center;
     background-color: white;
     width: 80%;
