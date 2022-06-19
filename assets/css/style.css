@@ -9,7 +9,7 @@
 /* Global style*/
 
 body {
-    background-color: antiquewhite;
+    background-color: RGBA(146, 168, 209, 0.5);
     font-family: "Kdam Thmor Pro", sans-serif ;
     color: #252525;
 }
@@ -59,4 +59,22 @@ body {
     font-size: 1.5rem;
 }
 
+/* Game start button*/
+
+#startGame {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#startBtn {
+    font-size: 1.5rem;
+    line-height: 80%;
+    padding: 35px;
+    color: #252525;
+    margin: 2%;
+    border: 2px #252525 solid;
+    border-radius: 15px;
+    font-family: inherit;
+}
 
