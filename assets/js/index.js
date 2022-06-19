@@ -65,3 +65,24 @@ function randomNumber() {
   document.getElementById("bottomWord").style.color = randomBottomColor ;
   
 }
+
+// function that checks answers if "yes" button is pressed 
+function checkCorrectAnswerIfYes() {
+  
+    // Top word and color of bottom word
+    let topWordOnScreen = document.getElementById("topWord").innerText;
+    let bottomColorOnScreen = document.getElementById("bottomWord").style.color;
+    // Change Captial letters to lower case so they can compare to colors
+    let toLowerCaseWords = topWordOnScreen.toLowerCase() ;
+    // If statement that compares that the to word and the color of the bottom word match
+  
+    let score = parseInt(document.getElementById("score").innerText);
+    if (toLowerCaseWords == bottomColorOnScreen) {
+      
+      document.getElementById("score").innerText = ++score ;
+    } else {
+      
+      document.getElementById("score").innerText = --score ;
+    }
+  
+  }
