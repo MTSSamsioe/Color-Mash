@@ -78,3 +78,60 @@ body {
     font-family: inherit;
 }
 
+/*Game section*/
+
+.gameSection {
+    margin: 0 auto;
+    background-color: aquamarine;
+    width: 80%;
+}
+
+#meaning, #wordColor {
+    margin: 2% auto;
+    text-align: center;
+    background-color: rgb(120, 120, 120, 0.5);
+    width: 50%;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+#topWord, #bottomWord {
+    margin: 2% auto;
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    font-size: 1.5rem;
+    
+}
+
+#instructions {
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+#instructionsBox {
+    text-align: center;
+    margin: 2% auto;
+    width: 50%;
+    font-size: 1.5rem;
+    background-color: rgb(120, 120, 120, 0.5);
+    
+}
+
+#answerSection {
+    margin: 2% auto;
+    width: 100%;
+    text-align: center ;
+
+}
+
+.btn {
+    visibility: hidden;
+    font-size: 1.5rem;
+    line-height: 80%;
+    padding: 35px;
+    color: blue;
+}
+
