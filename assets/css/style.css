@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+/* Delete browser standard margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global style*/
+
+body {
+    background-color: antiquewhite;
+    font-family: "Kdam Thmor Pro", sans-serif ;
+    color: #252525;
+}
+
