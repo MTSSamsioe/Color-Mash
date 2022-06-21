@@ -116,10 +116,13 @@ li {
     font-size: 1.5rem;
 }
 
+
 #meaning {
+    
     border-radius: 50% 50% 10% 10%;
 }
 #wordColor{
+    
     border-radius: 10% 10% 50% 50%;
 }
 
@@ -131,6 +134,16 @@ li {
     height: auto;
     font-size: 1.5rem;
     
+}
+
+#topWord {
+    color: green;
+    border-radius: 50% 50% 0 0;
+}
+
+#bottomWord {
+    color: blue;
+    border-radius: 0 0 50% 50%;
 }
 
 #instructions {
