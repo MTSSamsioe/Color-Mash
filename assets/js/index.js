@@ -35,7 +35,8 @@ function start() {
       // Show start button and hide answerbuttons
       document.getElementById('startBtn').style.visibility = "visible";
       //document.getElementsByClassName("btn").style.visibility = "hidden"
-      alert("You're out of time!");
+      let score = parseInt(document.getElementById("score").innerText);
+      alert(`You're out of time! Your score is ${score} `);
      
     }
   }, 1000);
@@ -118,6 +119,7 @@ function checkCorrectAnswerIfYes() {
       highScoreArray.sort();
       highScoreArray.reverse();
       document.getElementById("highScore").innerHTML = highScoreArray[0];
+      console.log(highScoreArray);
     }
 // function to show checkmark when correct
 function check() {
