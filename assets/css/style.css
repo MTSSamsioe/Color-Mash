@@ -53,7 +53,7 @@ li {
     padding-left: 2%;
     padding-top: 2%;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 4rem;
     letter-spacing: 0.5rem;
     -webkit-text-stroke: 2px black;
@@ -71,14 +71,8 @@ li {
               
 }
 
-/*Media query for header*/
 
-@media (max-width: 630px) {
-   li {
-    display: block;
-    line-height: 35px;
-}
-}
+ 
 
 /* Game start button*/
 
@@ -200,3 +194,30 @@ li {
     z-index: 0;
     
 }
+
+/*Media query for header for scren under 700px*/
+
+@media (max-width: 700px) {
+    li {
+     display: block;
+     line-height: 35px;
+ }
+ 
+ #title {
+     font-size: 3rem;
+ }
+ 
+ }
+ 
+ /* Media query for header under */
+ 
+ @media (max-width: 500px) {
+  
+  #title {
+      font-size: 2rem;
+  }
+  #instructionsBox {
+    font-size: 1rem;
+  }
+
+} 
