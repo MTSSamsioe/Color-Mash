@@ -30,6 +30,9 @@
         <section>
             <div id="startGame"><button id="startBtn" onclick="start()" >START NEW GAME</button></div>
         </section>
+        <section id="instructions">
+            <div id="instructionsBox">Does the Meaning of the top word match the color of the bottom Word ?</div>
+        </section>
         <section class="gameSection">
             <div id="meaning">Meaning</div>
             <div id="topWord"><p>word</p></div>
@@ -38,9 +41,7 @@
             <div id="bottomWord"><p>color</p></div>
             <div id="wordColor">WordColor</div>
         </section>
-        <section id="instructions">
-            <div id="instructionsBox">Does the Meaning Match the Word color</div>
-        </section>
+       
         <section id="answerSection">
             <span><button class="btn" id="yes" onclick="checkCorrectAnswerIfYes() ; wordAndColChange()" >YES</button></span>
             <span ><button class="btn" id="no" onclick="checkCorrectAnswerIfNo() ; wordAndColChange()" >NO</button></span>
