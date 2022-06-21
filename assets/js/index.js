@@ -113,13 +113,20 @@ function checkCorrectAnswerIfYes() {
   // Function that saves higest score to an array
   let highScoreArray = [0];
   function highScore() {
-    // adds endscore to high score array
+    // adds finalscore to high score array
      let finalScore = parseInt(document.getElementById("score").textContent);
+      if (finalScore >= 0) {
       highScoreArray.push(finalScore);
       highScoreArray.sort();
       highScoreArray.reverse();
       document.getElementById("highScore").innerHTML = highScoreArray[0];
       console.log(highScoreArray);
+    }else {
+      highScoreArray.push(finalScore);
+      highScoreArray.sort();
+      document.getElementById("highScore").innerHTML = highScoreArray[0];
+      console.log(highScoreArray);
+    }
     }
 // function to show checkmark when correct
 function check() {
