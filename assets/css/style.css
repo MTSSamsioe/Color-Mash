@@ -102,11 +102,15 @@ li {
 /*Game section*/
 
 .gameSection {
+    position: relative; 
     margin: 0 auto;
     background-color: RGB(152, 180, 212);
     width: 80%;
     border-radius: 50%;
 }
+
+
+
 
 #meaning, #wordColor {
     
@@ -165,3 +169,30 @@ li {
     color: blue;
 }
 
+/* images for correct and wromng answers*/
+
+
+
+#check {
+    visibility: hidden;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 0;
+    
+}
+
+#cross {
+    visibility: hidden;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 0;
+    
+}

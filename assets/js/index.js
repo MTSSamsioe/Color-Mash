@@ -77,10 +77,10 @@ function checkCorrectAnswerIfYes() {
   
     let score = parseInt(document.getElementById("score").innerText);
     if (toLowerCaseWords == bottomColorOnScreen) {
-      
+      check()
       document.getElementById("score").innerText = ++score;
     } else {
-      
+      cross()
       document.getElementById("score").innerText = --score;
     }
   
@@ -100,10 +100,10 @@ function checkCorrectAnswerIfYes() {
     
     let score = parseInt(document.getElementById("score").innerText);
     if (toLowerCaseWords !== bottomColorOnScreen) {
-      
+      check()
       document.getElementById("score").innerText = ++score;
     } else {
-      
+      cross()
       document.getElementById("score").innerText = --score;
     }
   
@@ -119,5 +119,18 @@ function checkCorrectAnswerIfYes() {
       highScoreArray.reverse();
       document.getElementById("highScore").innerHTML = highScoreArray[0];
     }
+// function to show checkmark when correct
+function check() {
 
-    
+document.getElementById("check").style.visibility = "visible";
+setTimeout(function(){document.getElementById("check").style.visibility = "hidden"}, 500);
+
+}
+
+// function to show cross when wrong
+function cross() {
+
+  document.getElementById("cross").style.visibility = "visible";
+  setTimeout(function() {document.getElementById("cross").style.visibility = "hidden"}, 500);
+  
+  }
