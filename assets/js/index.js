@@ -67,7 +67,7 @@ function randomNumber() {
 }
 
 // function that checks answers if "yes" button is pressed 
-function checkCorrectAnswerIfYes() {
+function checkCorrectAnswer(type) {
   
     // Top word and color of bottom word
     let topWordOnScreen = document.getElementById("topWord").innerText;
@@ -77,69 +77,51 @@ function checkCorrectAnswerIfYes() {
     // If statement that compares that the to word and the color of the bottom word match
   
     let score = parseInt(document.getElementById("score").innerText);
-    if (toLowerCaseWords == bottomColorOnScreen) {
-      check();
+    if (type === "yes" ? toLowerCaseWords == bottomColorOnScreen: toLowerCaseWords !== bottomColorOnScreen ) {
+      img("check");
+      
       document.getElementById("score").innerText = ++score;
     } else {
-      cross();
+      img("cross");
       document.getElementById("score").innerText = --score;
     }
   
   }
-
-  // function that checks answer if "no" button is pressed
-  function checkCorrectAnswerIfNo() {
-  
-    // Top word and color of bottom word
-    let topWordOnScreen = document.getElementById("topWord").innerText;
-    let bottomColorOnScreen = document.getElementById("bottomWord").style.color;
-    // Change Captial letters to lower case so they can compare to colors
-    let toLowerCaseWords = topWordOnScreen.toLowerCase();
-    // If statement that compares that the to word and the color of the bottom word match
    
-    
-    
-    let score = parseInt(document.getElementById("score").innerText);
-    if (toLowerCaseWords !== bottomColorOnScreen) {
-      check();
-      document.getElementById("score").innerText = ++score;
-    } else {
-      cross();
-      document.getElementById("score").innerText = --score;
-    }
+    // Function that saves higest score to an array
+    let highScoreArray = [];
+    function highScore() {
+      // adds finalscore to high score array
+      
+       let finalScore = parseInt(document.getElementById("score").textContent);
+        
+        highScoreArray.push(finalScore);
+        highScoreArray.sort();
+      
+        console.log(highScoreArray);
+        document.getElementById("highScore").innerHTML = highScoreArray[highScoreArray.length - 1];
+        
+      }
+
+ // function to show checkmark when correct
+function img(type) {
+  if (type === "check") {
+    document.getElementById("check").style.visibility = "visible";
+    setTimeout(function(){document.getElementById("check").style.visibility = "hidden"}, 500);
+  } else if (type === "cross") {
+    document.getElementById("cross").style.visibility = "visible";
+    setTimeout(function(){document.getElementById("cross").style.visibility = "hidden"}, 500);
+  } else {
+    alert("test")
+  }
+  
   
   }
-
-  // Function that saves higest score to an array
-  let highScoreArray = [0];
-  function highScore() {
-    // adds finalscore to high score array
-     let finalScore = parseInt(document.getElementById("score").textContent);
-      if (finalScore >= 0) {
-      highScoreArray.push(finalScore);
-      highScoreArray.sort();
-      highScoreArray.reverse();
-      document.getElementById("highScore").innerHTML = highScoreArray[0];
-      console.log(highScoreArray);
-    }else {
-      highScoreArray.push(finalScore);
-      highScoreArray.sort();
-      document.getElementById("highScore").innerHTML = highScoreArray[0];
-      console.log(highScoreArray);
-    }
-    }
-// function to show checkmark when correct
-function check() {
-
-document.getElementById("check").style.visibility = "visible";
-setTimeout(function(){document.getElementById("check").style.visibility = "hidden"}, 500);
-
-}
-
-// function to show cross when wrong
-function cross() {
-
-  document.getElementById("cross").style.visibility = "visible";
-  setTimeout(function() {document.getElementById("cross").style.visibility = "hidden"}, 500);
   
-  }
+
+
+  
+ 
+
+    
+    
