@@ -78,10 +78,10 @@ function checkCorrectAnswerIfYes() {
   
     let score = parseInt(document.getElementById("score").innerText);
     if (toLowerCaseWords == bottomColorOnScreen) {
-      check()
+      check();
       document.getElementById("score").innerText = ++score;
     } else {
-      cross()
+      cross();
       document.getElementById("score").innerText = --score;
     }
   
@@ -101,10 +101,10 @@ function checkCorrectAnswerIfYes() {
     
     let score = parseInt(document.getElementById("score").innerText);
     if (toLowerCaseWords !== bottomColorOnScreen) {
-      check()
+      check();
       document.getElementById("score").innerText = ++score;
     } else {
-      cross()
+      cross();
       document.getElementById("score").innerText = --score;
     }
   

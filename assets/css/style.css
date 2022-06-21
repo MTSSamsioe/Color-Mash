@@ -29,7 +29,7 @@ body {
 }
 
 #headerTopContainer {
-    margin-bottom: 0 auto;
+    margin: 0 auto;
     border-bottom: 2px #252525 solid;
     padding: 5% 5% 7% 5%; 
 
