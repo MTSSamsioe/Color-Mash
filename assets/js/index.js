@@ -36,7 +36,7 @@ function start() {
       document.getElementById('startBtn').style.visibility = "visible";
       //document.getElementsByClassName("btn").style.visibility = "hidden"
       let score = parseInt(document.getElementById("score").innerText);
-      alert(`You're out of time! Your score is ${score} `);
+      alert(`You're time is up! Your score is ${score} `);
      
     }
   }, 1000);
@@ -96,7 +96,7 @@ function checkCorrectAnswer(type) {
        let finalScore = parseInt(document.getElementById("score").textContent);
         
         highScoreArray.push(finalScore);
-        highScoreArray.sort();
+        highScoreArray.sort((a, b) => a - b); // code on this line after .sort is from https://dmitripavlutin.com/javascript-array-sort-numbers/ 
       
         console.log(highScoreArray);
         document.getElementById("highScore").innerHTML = highScoreArray[highScoreArray.length - 1];
@@ -112,9 +112,8 @@ function img(type) {
     document.getElementById("cross").style.visibility = "visible";
     setTimeout(function(){document.getElementById("cross").style.visibility = "hidden"}, 500);
   } else {
-    alert("test")
+    alert("You have no valid answer")
   }
-  
   
   }
   
