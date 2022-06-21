@@ -119,3 +119,5 @@ function checkCorrectAnswerIfYes() {
       highScoreArray.reverse();
       document.getElementById("highScore").innerHTML = highScoreArray[0];
     }
+
+    
