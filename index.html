@@ -41,6 +41,44 @@
             <span><button class="btn" id="yes" onclick="checkCorrectAnswer('yes') ; wordAndColChange()" >YES</button></span>
             <span ><button class="btn" id="no" onclick="checkCorrectAnswer('no') ; wordAndColChange()" >NO</button></span>
         </section>
+        <section>
+            <button id="popUpBtn" onclick="popUp('open')">Press for more instructions</button>
+        
+            <div id="popUpContainer">
+            
+                <div id="popUpContent">
+                    <span id="closePopUp" onclick="popUp('close')">Close window X</span>
+                    <br>
+                    <br>
+                    <h1>HOW TO PLAY</h1>
+                    <div id="instructionsText">
+                        
+                        <hr>
+                        <p>When you press "START NEW GAME" two answer buttons "YES" and "NO" will apear under the blue oval with words in it.
+                            <br>
+                            A timer will start at 20 seconds and count down.
+                            <br>
+                           Under the the headline that says "Meaning" you see a word. And above the headline that says "Word Color" you will see another word.
+                           <br>
+                           If the MEANING of the top word is the same as the COLOR of the bottom word you press the button "YES".
+                           <br>
+                           If the MEANING of the top word is NOT the same as the COLOR of the bottom word you press the button "NO".
+                           <br>
+                           You will receive one point for a correct answer and you will loose one point for a incorrect answer.
+                           <br>
+                           When your time is up a message with your score will apear. And if your score is higher than the current high score your score will be the new high score.
+                           <br>
+                           Have fun!  
+                        </p>
+                        <br>
+                        <div id="playImgContainer">
+                        <img id="playImg" src="assets/images/instructions.gif" alt="Shows a gif of how to play">
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
     </main>
     
     <script src="assets/js/index.js"></script>

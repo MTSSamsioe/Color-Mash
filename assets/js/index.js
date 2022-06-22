@@ -117,6 +117,21 @@ function img(type) {
   
   }
   
+// Pop up with instructions
+function popUp(type) {
+  if (type === "open") {
+    document.getElementById("popUpContainer").style.display = "block";
+  } else if (type === "close") {
+    
+   document.getElementById("popUpContainer").style.display = "none";
+
+  } else {
+    alert("Press X mark in the top right to close window")
+    }
+    
+
+  }
+  
 
 
   
