@@ -1,6 +1,8 @@
 # COLOR-MASH
 ---
-Color-Mash is a game that practises the players mental agility in an entertaining and competetive way.
+Color-Mash is a game that exercises the players mental agility in an entertaining and competetive way.
+The goal of the game is to decide if the meaning of a word that describes a color is the same as the color of another word.
+This is done on time so the player need to focus to become better at it and beat their own best score.
 Color-Mash is a fully responsive javascript game that can be played in all popular browsers.
 The target audience for this game is anyone who wants to improve their mental agility or just love games.
  
