@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Color-Mash</title>
 </head>
+
 <body>
+    <!--Header-->
     <header id="head">
+        <!--Header top part-->
         <div id="headerTopContainer">
             <span id="title">Color-Mash</span>
         </div>
+        <!--Header bottom part with game statisticcs-->
         <div id="headerBottomContainer">
             <ul>
                 <li id="time">| Time: <span id="timeLeft">00</span> |</li>
@@ -19,68 +24,77 @@
                 <li id="highScoreContainer">| High-score: <span id="highScore">00</span> |</li>
             </ul>
         </div>
-        
     </header>
     <main>
+        <!--Game start button-->
         <section>
-            <div id="startGame"><button id="startBtn" onclick="start()" >START NEW GAME</button></div>
+            <div id="startGame"><button id="startBtn" onclick="start()">START NEW GAME</button></div>
         </section>
         <section id="instructions">
             <div id="instructionsBox">Does the meaning of the top word match the color of the bottom word ?</div>
         </section>
+        <!--Game questions section-->
         <section class="gameSection">
             <div id="meaning">Meaning</div>
-            <div id="topWord"><p>RED</p></div>
+            <div id="topWord">
+                <p>RED</p>
+            </div>
             <img id="check" src="assets/images/check.png" alt="check when correct answer">
             <img id="cross" src="assets/images/cross.png" alt="cross when correct answer">
-            <div id="bottomWord"><p>GREEN</p></div>
+            <div id="bottomWord">
+                <p>GREEN</p>
+            </div>
             <div id="wordColor">Word Color</div>
         </section>
-       
+        <!--Answer buttons-->
         <section id="answerSection">
-            <span><button class="btn" id="yes" onclick="checkCorrectAnswer('yes') ; wordAndColChange()" >YES</button></span>
-            <span ><button class="btn" id="no" onclick="checkCorrectAnswer('no') ; wordAndColChange()" >NO</button></span>
+            <span><button class="btn" id="yes"
+                    onclick="checkCorrectAnswer('yes') ; wordAndColChange()">YES</button></span>
+            <span><button class="btn" id="no" onclick="checkCorrectAnswer('no') ; wordAndColChange()">NO</button></span>
         </section>
         <section>
             <button id="popUpBtn" onclick="popUp('open')">Press for more instructions</button>
-        
+            <!--Popup box for instructions-->
             <div id="popUpContainer">
-            
+
                 <div id="popUpContent">
                     <span id="closePopUp" onclick="popUp('close')">Close window X</span>
                     <br>
                     <br>
                     <h1>HOW TO PLAY</h1>
                     <div id="instructionsText">
-                        
                         <hr>
-                        <p>When you press "START NEW GAME" two answer buttons "YES" and "NO" will appear below the blue oval with words in it.
+                        <p>When you press "START NEW GAME" two answer buttons "YES" and "NO" will appear below the blue
+                            oval with words in it.
                             <br>
                             A timer will start at 20 seconds and count down.
                             <br>
-                           Under the the headline that says "Meaning" you see a word. And above the headline that says "Word Color" you will see another word.
-                           <br>
-                           If the MEANING of the top word is the same as the COLOR of the bottom word you press the button "YES".
-                           <br>
-                           If the MEANING of the top word is NOT the same as the COLOR of the bottom word you press the button "NO".
-                           <br>
-                           You will receive one point for a correct answer and you will loose one point for a incorrect answer.
-                           <br>
-                           When your time is up a message with your score will appear. And if your score is higher than the current high score your score will be the new high score.
-                           <br>
-                           Have fun!  
+                            Under the the headline that says "Meaning" you see a word. And above the headline that says
+                            "Word Color" you will see another word.
+                            <br>
+                            If the MEANING of the top word is the same as the COLOR of the bottom word you press the
+                            button "YES".
+                            <br>
+                            If the MEANING of the top word is NOT the same as the COLOR of the bottom word you press the
+                            button "NO".
+                            <br>
+                            You will receive one point for a correct answer and you will loose one point for a incorrect
+                            answer.
+                            <br>
+                            When your time is up a message with your score will appear. And if your score is higher than
+                            the current high score your score will be the new high score.
+                            <br>
+                            Have fun!
                         </p>
                         <br>
                         <div id="playImgContainer">
-                        <img id="playImg" src="assets/images/instructions.gif" alt="Shows a gif of how to play">
+                            <img id="playImg" src="assets/images/instructions.gif" alt="Shows a gif of how to play">
                         </div>
                     </div>
-                
                 </div>
             </div>
         </section>
     </main>
-    
     <script src="assets/js/index.js"></script>
 </body>
 </html>
