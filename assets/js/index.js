@@ -111,15 +111,15 @@ function img(type) {
   if (type === "check") {
     document.getElementById("check").style.visibility = "visible";
     setTimeout(function () {
-      document.getElementById("check").style.visibility = "hidden"
+      document.getElementById("check").style.visibility = "hidden";
     }, 500);
   } else if (type === "cross") {
     document.getElementById("cross").style.visibility = "visible";
     setTimeout(function () {
-      document.getElementById("cross").style.visibility = "hidden"
+      document.getElementById("cross").style.visibility = "hidden";
     }, 500);
   } else {
-    alert("You have no valid answer")
+    alert("You have no valid answer");
   }
 }
 
@@ -133,6 +133,6 @@ function popUp(type) {
   } else if (type === "close") {
     document.getElementById("popUpContainer").style.display = "none";
   } else {
-    alert("Press X mark in the top right to close window")
+    alert("Press X mark in the top right to close window");
   }
 }

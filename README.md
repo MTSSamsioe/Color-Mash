@@ -51,20 +51,36 @@ The target audience for this game is anyone who wants to improve their mental ag
 
 ## Testing
 ---
+### Browsers and responsiveness
+- The site is tested in Safari, Google Chrome and Mozilla FireFox.
+- The sites is responsive in all tested browsers
+- Screen shots below are from Google Chrome dev tools
+
+![Picture of ipad screen](assets/images/ipad.png) 
+
+![Picture of phone screen](assets/images/phone.png)
+
+![Picture of popup on small screen](assets/images/responsive_popup.png)
+
+
+### Color testing
+- The site is tested with chrome plugin wave to see if colors are easy to see.
+
+![Picture of wave results](assets/images/wave.png)
 
 ### Validator Testing
 
 - HTML
-    - No errors were found when running the official w3c validator LINK.
+    - No errors were found when running the official [w3c validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmtssamsioe.github.io%2FColor-Mash%2F).
 - CSS
-    - No errors were found when running the official (Jigsaw) validator. LINK
+    - No errors were found when running the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmtssamsioe.github.io%2FColor-Mash%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv).
 - JavaScript
-    - No errors were found when running the official Jshint validator. LINK
+    - No errors were found when running the official [Jshint validator](https://jshint.com/).
         - The following metrics were returned:
-            - There are XX functions in this file.
-            - Function with the largest signature takes XX arguments, while the median is XX.
-            - Largest function has 10 statements in it, while the median is XX.
-            - The most complex function has a cyclomatic complexity value of 4 while the median is XX.
+            - There are 11 functions in this file.
+            - Function with the largest signature take 2 arguments, while the median is 0.
+            - Largest function has 12 statements in it, while the median is 4.
+            - The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
 ### Fixed Bugs
 - Could not get the if statement in function "checkCorrectAnswer(type)" to work.
@@ -79,7 +95,7 @@ The target audience for this game is anyone who wants to improve their mental ag
 - Could not keep the check and cross mark to be centered in the questions section when I changed screen size.
     - FIX: To get the check and cross mark to show in front of the questions section I had to make their position absolute. To keep them centered when changing screen size I needed to add transform: translate(-50% 50%), bottom: 50%, left 50% to their style properties.
 ### Unfixed Bugs
- 
+- It is not really a bug because it works but it is an emergency fix. The count down timer in function start() stops on 2 not 0 when the if statement is set to 0. But if I set the timer to stop at -2 it stops at zero and works fine. 2 seconds disapear somwhere and I have been unable to figure out why.
 
 ## Deployment
 ---
@@ -91,18 +107,16 @@ The target audience for this game is anyone who wants to improve their mental ag
 ---
 
 ### Content
-- Instructions and some of the code was taken from this site: [Stack overflow - Foolish Ferret](https://www.codegrepper.com/code-examples/javascript/add+countdown+time+to+game+javascript)
+- Instructions and the code was taken from this site: [Stack overflow - Foolish Ferret](https://www.codegrepper.com/code-examples/javascript/add+countdown+time+to+game+javascript) and used in function start().
 - The colours and instructions for the title shadow effect was taken from: [We Learn Code](https://welearncode.com/rainbow-text/)
 - Instructions to solve bug of centered object with position absolute I found here: [Medium manisha Basra](https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e)
 - Instructions how to make a popup box I found here: [w3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp)
-- XX  Solution to bug fix on .sort() method sorting numbers alphabetical I found here: [Dimitri Pavlutin](https://dmitripavlutin.com/javascript-array-sort-numbers/)
-
+- Solution to bug fix on .sort() method sorting numbers alphabetical I found here: [Dimitri Pavlutin](https://dmitripavlutin.com/javascript-array-sort-numbers/)
 - Instructions on how to get the check and cross mark to disappear after an error of a correct answer I found here: [w3 Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp)
 
 ### Media
 - Picture of check mark and cross are from: google images.
 - .Gif image in explanation popup is from: [Adobe](https://www.adobe.com/express/feature/video/convert/video-to-gif).
+- Font is from google fonts.
 
-## Other General Project Advice
----
 
