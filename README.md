@@ -70,6 +70,11 @@ The target audience for this game is anyone who wants to improve their mental ag
 
 ![Picture of wave results](assets/images/wave.png)
 
+### Lighthouse test
+- The site is tested with lighthouse in Google chrome dev tools with good scores in all categories.
+
+![Picture of lighthouse score](assets/images/lighthouse.png)
+
 ### Validator Testing
 
 - HTML
